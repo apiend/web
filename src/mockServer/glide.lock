@@ -1,0 +1,12 @@
+hash: 2a88cbd41b1256d406bb29f1e8783a9865d322041fd720843ea2d3e55ae80c41
+updated: 2017-07-24T11:31:56.8026876+08:00
+imports:
+- name: github.com/asdine/storm
+  version: 84522964db3b14b386db48c7ae91c549b33a4171
+- name: github.com/boltdb/bolt
+  version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
+- name: github.com/nu7hatch/gouuid
+  version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
+- name: goji.io
+  version: 0d89ff54b2c18c9c4ba530e32496aef902d3c6cd
+testImports: []
