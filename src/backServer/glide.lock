@@ -1,0 +1,6 @@
+hash: 417e1d99d666524b3ae8d3654aa674f5aa3db29ed1233c88340c1555a92668e9
+updated: 2017-07-25T17:56:13.6387382+08:00
+imports:
+- name: github.com/coocood/jas
+  version: e8ccaf9a2db610ffcf51007c77f83cd40f77b59d
+testImports: []
