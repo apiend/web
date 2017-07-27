@@ -1,12 +1,24 @@
-hash: 2a88cbd41b1256d406bb29f1e8783a9865d322041fd720843ea2d3e55ae80c41
-updated: 2017-07-24T11:31:56.8026876+08:00
+hash: 9e722d3e1ba9247d9c65bf42ff8bf09e4af7212d9892e7721feb5cd794f99146
+updated: 2017-07-27T14:59:48.9376503+08:00
 imports:
+- name: github.com/allegro/bigcache
+  version: b6bd76ad0f792508efc589a2790e2aee1d0f240d
+  subpackages:
+  - queue
 - name: github.com/asdine/storm
-  version: 84522964db3b14b386db48c7ae91c549b33a4171
+  version: e35194f772fef1442e9f6c8526a6c115ca729638
 - name: github.com/boltdb/bolt
   version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
+- name: github.com/coocood/freecache
+  version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
 - name: github.com/nu7hatch/gouuid
   version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
+- name: github.com/spaolacci/murmur3
+  version: 0d12bf811670bf6a1a63828dfbd003eded177fce
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - assert
 - name: goji.io
   version: 0d89ff54b2c18c9c4ba530e32496aef902d3c6cd
 testImports: []

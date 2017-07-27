@@ -20,9 +20,7 @@ func (*Hello) Get(ctx *jas.Context) {
 }
 
 func main() {
-	// fmt.Println(model.UsersId)
 
-	// fmt.Println(Hello)
 	router := jas.NewRouter(new(Hello), new(model.UsersId))
 	router.BasePath = "/v1/"
 	fmt.Println(router.HandledPaths(true))
