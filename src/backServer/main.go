@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"backServer/model"
+	"backServer/random"
 
 	"github.com/coocood/jas"
 )
@@ -12,10 +13,13 @@ import (
 type Hello struct {
 	title string
 }
+type remsg struct {
+	name string
+}
 
 func (*Hello) Get(ctx *jas.Context) {
 	// `GET /v1/hello`
-	ctx.Data = "hello world"
+	ctx.Data = random.RandString(12)
 	//response: `{"data":"hello world","error":null}`
 }
 
@@ -27,4 +31,5 @@ func main() {
 	//output: `GET /v1/hello`
 	http.Handle(router.BasePath, router)
 	http.ListenAndServe(":8080", nil)
+
 }

@@ -2,3 +2,5 @@ package: backServer
 import:
 - package: github.com/coocood/jas
 - package: github.com/lukehoban/go-outline
+- package: github.com/stretchr/testify
+  version: ^1.1.4
