@@ -7,7 +7,7 @@ import (
 	"backServer/model"
 	"backServer/random"
 
-	"github.com/coocood/jas"
+	"backServer/lib/coocood/jas"
 )
 
 type Hello struct {

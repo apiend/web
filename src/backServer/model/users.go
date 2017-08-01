@@ -1,6 +1,6 @@
 package model
 
-import "github.com/coocood/jas"
+import "backServer/lib/coocood/jas"
 
 type UsersId struct{}
 

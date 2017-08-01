@@ -1,5 +1,5 @@
-hash: 9e722d3e1ba9247d9c65bf42ff8bf09e4af7212d9892e7721feb5cd794f99146
-updated: 2017-07-27T14:59:48.9376503+08:00
+hash: 5818561619df70ae0e243eb60b276efdc4cf8f4a16b3e9cce33fdb3c18577ff6
+updated: 2017-08-01T19:49:09.3852147+08:00
 imports:
 - name: github.com/allegro/bigcache
   version: b6bd76ad0f792508efc589a2790e2aee1d0f240d
@@ -11,6 +11,17 @@ imports:
   version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
 - name: github.com/coocood/freecache
   version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+- name: github.com/dghubble/gologin
+  version: ea49f1659cedb2bbef34a869e014700fec178ae5
+- name: github.com/emirpasic/gods
+  version: f6c17b524822278a87e3b3bd809fec33b51f5b46
+  subpackages:
+  - containers
+  - lists
+  - lists/arraylist
+  - utils
+- name: github.com/json-iterator/go
+  version: b67201557ab304640cd85b1d9cee4d5fb1d47280
 - name: github.com/nu7hatch/gouuid
   version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
 - name: github.com/spaolacci/murmur3

@@ -1,8 +1,14 @@
-hash: 205494dead01bad19100d6145d7071b710ede7a541f6708bf0098adfd480b720
-updated: 2017-07-31T20:19:01.1763553+08:00
+hash: 50abc45be05dbb034fc97a80c49e0c805e6049154ab4a2245e8763c66c442ed9
+updated: 2017-08-01T19:47:22.1077094+08:00
 imports:
 - name: github.com/coocood/jas
   version: e8ccaf9a2db610ffcf51007c77f83cd40f77b59d
+- name: github.com/dghubble/gologin
+  version: ea49f1659cedb2bbef34a869e014700fec178ae5
+- name: github.com/emirpasic/gods
+  version: f6c17b524822278a87e3b3bd809fec33b51f5b46
+- name: github.com/json-iterator/go
+  version: b67201557ab304640cd85b1d9cee4d5fb1d47280
 - name: github.com/lukehoban/go-outline
   version: e785568742524aa488d7332e7619dba87b2a8b9d
 - name: github.com/stretchr/testify

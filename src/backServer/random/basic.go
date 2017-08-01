@@ -35,14 +35,14 @@ func Natural(max int) (int, error) {
 	return 0, WrongTypeError
 }
 
-// 返回一个随机的整数。 min 最小值  max 最大值
+// 返回一个随机的整数,min 最小值  max 最大值
 func Integer(min, max int) int {
 	randNum := R.Intn(max-min) + min
 	return randNum
 }
 
 /**
-	生成 随机字符串 英文
+	生成 随机字符串 英文+数字
 **/
 func RandString(length int) string {
 	rand.Seed(time.Now().UnixNano())

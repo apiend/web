@@ -106,7 +106,7 @@ func TestOnRemoveCallback(t *testing.T) {
 
 	// when
 	cache.Set("key", []byte("value"))
-	clock.set(2)
+	clock.set(5)
 	cache.Set("key2", []byte("value2"))
 
 	// then
