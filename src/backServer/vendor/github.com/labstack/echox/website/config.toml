@@ -1,0 +1,6 @@
+baseURL = "https://echo.labstack.com"
+languageCode = "en-us"
+title = "Echo - High performance, minimalist Go web framework"
+googleAnalytics = "UA-85059636-2"
+[params]
+  description = "Echo is a high performance, extensible, minimalist web framework for Go (Golang)."

@@ -1,0 +1,33 @@
+{{ partial "head.html" . }}
+<body class="docs">
+	{{ partial "topnav.html" . }}
+  <div class="w3-content">
+    {{ partial "sidenav.html" . }}
+    <div class="main">
+      {{ partial "bsa.html" }}
+      {{ partial "ad.html" }}
+      <div class="w3-row-padding">
+        <div class="w3-col s12 m10 l10">
+          {{ partial "notice.html" }}
+          <article class="content">
+            <section>
+              <h1>{{ .Title }}</h1>
+              {{ .Content }}
+              <h2><a href="https://forum.labstack.com">Got a question?</a></h2>
+            </section>
+            <footer>
+              <hr>
+              Caught a mistake?
+              <a 
+                href="https://github.com/labstack/echo/blob/master/website/content/{{ .File.Path }}">
+                 <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page on GitHub!
+              </a>
+            </footer>
+          </article>
+        </div>
+      </div>
+	    {{ partial "footer.html" . }}
+    </div>
+  </div>
+</body>
+</html>
