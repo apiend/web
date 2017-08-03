@@ -8,3 +8,5 @@ import:
   version: ^1.9.0
 - package: github.com/labstack/echo
   version: ^3.2.1
+- package: github.com/sh3rp/token
+- package: golang.org/x/sys
