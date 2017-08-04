@@ -2,6 +2,7 @@ package conf
 
 import (
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"os"
 
@@ -84,6 +85,7 @@ type memcached struct {
 }
 
 func init() {
+	fmt.Println("first ")
 }
 
 // initConfig initializes the app configuration by first setting defaults,

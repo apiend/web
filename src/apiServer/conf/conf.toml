@@ -36,6 +36,7 @@ dir = "template/pongo2"
 # .html,.tpl
 suffix = ".html"
 
+
 [database]
 name = "goweb_db"
 user_name = "goweb_dba"

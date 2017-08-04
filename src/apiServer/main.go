@@ -1,8 +1,7 @@
 package main
 
 import (
-	"html/template"
-	"io"
+
 	// "log"
 	"net/http"
 
@@ -15,13 +14,6 @@ import (
 	"github.com/labstack/echo/middleware"
 )
 
-type Template struct {
-	templates *template.Template
-}
-
-func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
-	return t.templates.ExecuteTemplate(w, name, data)
-}
 func main() {
 	confFilePath := "" // 默认conf/conf.toml
 
@@ -41,7 +33,7 @@ func main() {
 	// 验证码，优先于静态资源
 	e.Use(captcha.Captcha(captcha.Config{
 		CaptchaPath: "/captcha/",
-		SkipLogging: false,
+		SkipLogging: true,
 	}))
 
 	// t := &Template{
@@ -50,19 +42,22 @@ func main() {
 
 	r := pongor.GetRenderer(pongor.PongorOption{
 		// 默认模版目录
-		Directory: "templates",
+		Directory: "public/templates",
 		// if you want to reload template every request, set Reload to true.
 		Reload: true,
 	})
 	// fmt.Println(c.NewLen(6))
 	e.Renderer = r
+
+	// 静态资源
+	e.Static("/assets", "public/assets")
+
 	// Route => handler
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, Conf.App.Name)
+		return c.Render(http.StatusOK, "index.html", "")
 	})
 
 	e.GET("/hello", Hello)
-	// log.Global.Printf("ddd")
 
 	// Start server
 	e.Logger.Fatal(e.Start(Conf.Server.Addr))
