@@ -10,3 +10,6 @@ import:
   version: ^3.2.1
 - package: github.com/sh3rp/token
 - package: golang.org/x/sys
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson

@@ -12,3 +12,5 @@ import:
   version: ^3.0.0
 - package: github.com/dchest/captcha
 - package: github.com/echo-contrib/pongor
+- package: github.com/daryl/api
+- package: github.com/lunny/nodb

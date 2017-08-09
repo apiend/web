@@ -8,6 +8,10 @@ This is web system
 ## Http2 生成本证书
  go run c:\Go\src\crypto\tls\generate_cert.go --host localhost
 
+## 2017年8月9日15:36:22
+- get github.com/lunny/nodb  Nodb 是 ledisdb 的克隆和缩减版本。
+- get github.com/go-redis/redis   增加redis 的orm
+
 ## 2017年8月2日10:32:32
 - echo 
 

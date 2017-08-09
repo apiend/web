@@ -3,6 +3,7 @@ package main
 import (
 
 	// "log"
+
 	"net/http"
 
 	. "apiServer/conf"
@@ -51,6 +52,22 @@ func main() {
 
 	// 静态资源
 	e.Static("/assets", "public/assets")
+
+	// goleveldb db
+	// cfg := new(config.Config)
+	// cfg.DataDir = "./"
+	// dbs, err := nodb.Open(cfg)
+	// if err != nil {
+	// 	fmt.Printf("nodb: error opening db: %v", err)
+	// }
+	// db, _ := dbs.Select(0)
+	// err = db.Set([]byte("name"), []byte("diogo"))
+	// if err != nil {
+	// 	fmt.Printf("nodb: error opening db: %v", err)
+	// }
+	// value, _ := db.Get([]byte("name"))
+
+	// log.Debugf("run :%s", value)
 
 	// Route => handler
 	e.GET("/", func(c echo.Context) error {
