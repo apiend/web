@@ -1,5 +1,5 @@
-hash: d8849ae099a6baf77e476385b61be694af6b859aa85138e60d7de3e725e7eb28
-updated: 2017-08-09T15:41:57.2469439+08:00
+hash: 1843a6d5ad77f8efd37abe3bde309049cb5519fccd3a23577ddb4a8f92be7bad
+updated: 2017-08-10T11:14:19.1127562+08:00
 imports:
 - name: github.com/BurntSushi/toml
   version: a368813c5e648fee92e5f6c30e3944ff9d5e8895
@@ -13,8 +13,8 @@ imports:
   version: 4f5a93dd27a564890d16d0530e3bf944f77c5349
 - name: github.com/flosch/pongo2
   version: 58f1f3387f7c57843ff829d92a759d08abe5a63f
-- name: github.com/golang/snappy
-  version: 553a641470496b2327abcac10b36396bd98e45c9
+- name: github.com/go-redis/redis
+  version: 89515eebd1b5761486abd32d9e84a8f55dda7740
 - name: github.com/hb-go/echo-mw
   version: a3c62f25136a12c6a6f4d596ba5029fb103d49ff
   subpackages:
@@ -32,40 +32,14 @@ imports:
   - color
   - log
   - random
-- name: github.com/lunny/log
-  version: 7887c61bf0de75586961948b286be6f7d05d9f58
 - name: github.com/lunny/nodb
   version: fc1ef06ad4af0da31cdb87e3fa5ec084c67e6597
-  subpackages:
-  - config
-  - store
-  - store/driver
-  - store/goleveldb
 - name: github.com/mattn/go-colorable
   version: 6c0fd4aa6ec5818d5e3ea9e03ae436972a6c5a9a
 - name: github.com/mattn/go-isatty
   version: fc9e8d8ef48496124e79ae0df75490096eccf6fe
 - name: github.com/robfig/go-cache
   version: 9fc39e0dbf62c034ec4e45e6120fc69433a3ec51
-- name: github.com/siddontang/go-snappy
-  version: d8f7bb82a96d89c1254e5a6c967134e1433c9ee2
-  subpackages:
-  - snappy
-- name: github.com/syndtr/goleveldb
-  version: b89cc31ef7977104127d34c1bd31ebd1a9db2199
-  subpackages:
-  - leveldb
-  - leveldb/cache
-  - leveldb/comparer
-  - leveldb/errors
-  - leveldb/filter
-  - leveldb/iterator
-  - leveldb/journal
-  - leveldb/memdb
-  - leveldb/opt
-  - leveldb/storage
-  - leveldb/table
-  - leveldb/util
 - name: github.com/valyala/bytebufferpool
   version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
 - name: github.com/valyala/fasttemplate
@@ -76,7 +50,7 @@ imports:
   - acme
   - acme/autocert
 - name: golang.org/x/sys
-  version: b0e0dd72976dc482b6cb37c5640440f876ac1907
+  version: e42485b6e20ae7d2304ec72e535b103ed350cc02
   subpackages:
   - unix
 testImports: []

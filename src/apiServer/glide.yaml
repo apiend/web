@@ -14,3 +14,5 @@ import:
 - package: github.com/echo-contrib/pongor
 - package: github.com/daryl/api
 - package: github.com/lunny/nodb
+- package: github.com/go-redis/redis
+  version: ^6.5.6

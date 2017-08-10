@@ -2,10 +2,10 @@
 This is web system
 
 # 开发记录
-- apimodels 
-    - 技术栈: echo + mongodb
+- apiServer 
+    - echo + mongodb + redis
 
-## Http2 生成本证书
+## Http2 生成本地TLS证书 
  go run c:\Go\src\crypto\tls\generate_cert.go --host localhost
 
 ## 2017年8月9日15:36:22
