@@ -1,14 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type MyData struct {
+	One int
+	two string
+}
 
 func main() {
-	x := []int{1, 2, 3}
+	in := MyData{1, "two"}
+	fmt.Printf("%#v\n", in) //prints main.MyData{One:1, two:"two"}
 
-	func(arr []int) {
-		arr[0] = 7
-		fmt.Println(arr) //prints [7 2 3]
-	}(x)
+	encoded, _ := json.Marshal(in)
+	fmt.Println(string(encoded)) //prints {"One":1}
 
-	fmt.Println(x) //prints [7 2 3]
+	var out MyData
+	json.Unmarshal(encoded, &out)
+
+	fmt.Printf("%#v\n", out) //prints main.MyData{One:1, two:""}
 }

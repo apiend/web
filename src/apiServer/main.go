@@ -8,6 +8,7 @@ import (
 
 	. "apiServer/conf"
 	"apiServer/module/log"
+	"apiServer/util"
 
 	"github.com/echo-contrib/pongor"
 	"github.com/hb-go/echo-mw/captcha"
@@ -76,12 +77,25 @@ func main() {
 
 	e.GET("/hello", Hello)
 
+	// 登录页
+	e.GET("/login", Login)
+
 	// Start server
 	e.Logger.Fatal(e.Start(Conf.Server.Addr))
 }
 
 func Hello(c echo.Context) error {
-	return c.Render(200, "index.html", map[string]interface{}{
+	return c.Render(200, "hello.html", map[string]interface{}{
 		"title": "你好，世界",
+		"uuid":  util.GetUUID(),
+		"data":  "diogoxiang",
+	})
+}
+
+func Login(c echo.Context) error {
+	return c.Render(200, "login.html", map[string]interface{}{
+		"title": "你好，世界",
+		"uuid":  util.GetUUID(),
+		"data":  "diogoxiadng",
 	})
 }
