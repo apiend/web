@@ -79,9 +79,19 @@ func main() {
 
 	// 登录页
 	e.GET("/login", Login)
+	e.GET("/api/user", User)
 
 	// Start server
 	e.Logger.Fatal(e.Start(Conf.Server.Addr))
+}
+
+func User(c echo.Context) error {
+	// log.Debugf("header %s", c.Request().Header.Get("X_host_s"))
+	return c.JSON(200, map[string]interface{}{
+		"title": "你好，世界",
+		"uuid":  util.GetUUID(),
+		"data":  "diogoxiang",
+	})
 }
 
 func Hello(c echo.Context) error {
