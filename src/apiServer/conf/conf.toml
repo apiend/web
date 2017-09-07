@@ -44,6 +44,13 @@ pwd  = "123456"
 host = "127.0.0.1"
 port = "3306"
 
+[mongodb]
+name = "apiServer"
+# user_name = "goweb_dba"
+# pwd  = "123456"
+host = "127.0.0.1"
+port = "27017"
+
 [redis]
 server = "127.0.0.1:6379"
 pwd = "123456"
