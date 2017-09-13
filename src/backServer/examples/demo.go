@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	workerCount := 2
+	workerCount := 20
 
 	for i := 0; i < workerCount; i++ {
 		go doit(i)
