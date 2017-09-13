@@ -6,7 +6,6 @@
 
 ## 目录结构:
 ```
-    
     conf           //配置文件
     controllers    //控制器 
     middleware     //插件及中间件
