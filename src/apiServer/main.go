@@ -4,6 +4,7 @@ import (
 
 	// "log"
 
+	"fmt"
 	"net/http"
 
 	. "apiServer/conf"
@@ -81,8 +82,22 @@ func main() {
 	e.GET("/login", Login)
 	e.GET("/api/user", User)
 
+	e.HTTPErrorHandler = customHTTPErrorHandler
 	// Start server
 	e.Logger.Fatal(e.Start(Conf.Server.Addr))
+}
+
+func customHTTPErrorHandler(err error, c echo.Context) {
+	code := http.StatusInternalServerError
+	if he, ok := err.(*echo.HTTPError); ok {
+		code = he.Code
+	}
+	log.Debugf("run with conf:%d", code)
+	errorPage := fmt.Sprintf("public/errorPages/%d.html", code)
+	if err := c.File(errorPage); err != nil {
+		c.Logger().Error(err)
+	}
+	c.Logger().Error(err)
 }
 
 func User(c echo.Context) error {
