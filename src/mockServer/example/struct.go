@@ -12,8 +12,8 @@ type person struct {
 }
 
 func main() {
-	// clock := person{value: 0}
-	// fmt.Printf("%v", &clock)
+	clock := person{value: 0, name: "diogoxiang"}
+	fmt.Printf("%v", &clock)
 	// fmt.Printf("%d\n", clock.epoch)
 	// fmt.Printf("%d\n", time.Now().Unix())
 

@@ -30,7 +30,7 @@ func Krand(size int, kind int) []byte {
 
 func main() {
 	fmt.Println("num:   " + string(Krand(5, KC_RAND_KIND_NUM)))
-	// fmt.Println("lower: " + string(Krand(16, KC_RAND_KIND_LOWER)))
-	// fmt.Println("upper: " + string(Krand(16, KC_RAND_KIND_UPPER)))
-	// fmt.Println("all:   " + string(Krand(16, KC_RAND_KIND_ALL)))
+	fmt.Println("lower: " + string(Krand(16, KC_RAND_KIND_LOWER)))
+	fmt.Println("upper: " + string(Krand(16, KC_RAND_KIND_UPPER)))
+	fmt.Println("all:   " + string(Krand(16, KC_RAND_KIND_ALL)))
 }
