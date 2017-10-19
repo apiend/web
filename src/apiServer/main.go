@@ -82,6 +82,9 @@ func main() {
 	e.GET("/login", Login)
 	e.GET("/api/user", User)
 
+	//测试接收
+	e.POST("/api/apiweb", apiweb)
+
 	e.HTTPErrorHandler = customHTTPErrorHandler
 	// Start server
 	e.Logger.Fatal(e.Start(Conf.Server.Addr))
@@ -122,5 +125,17 @@ func Login(c echo.Context) error {
 		"title": "你好，世界",
 		"uuid":  util.GetUUID(),
 		"data":  "diogoxiadng",
+	})
+}
+
+/**
+* @des jjj
+ */
+func apiweb(c echo.Context) error {
+	return c.JSON(200, map[string]interface{}{
+		"title": "你好，世界",
+		"uuid":  util.GetUUID(),
+		"data":  "diogoxiang",
+		"name":  c.FormValue("name"),
 	})
 }
