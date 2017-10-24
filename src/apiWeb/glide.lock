@@ -1,10 +1,14 @@
-hash: 73714b3514bf24d320e44e6e37ccd679315e027171fddef76cfab50c4045b7b9
-updated: 2017-10-24T23:36:55.3957168+08:00
+hash: de413c9a0f4e5bbdae093d984e50698c7df98aa2d42ec11469e78f8463d95fb5
+updated: 2017-10-24T23:50:44.4498913+08:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/gin
   version: d459835d2b077e44f7c9b453505ee29881d5d12d
+- name: github.com/go-playground/locales
+  version: e4cbcb5d0652150d40ad0646651076b6bd2be4f6
+- name: github.com/go-playground/universal-translator
+  version: b32fa301c9fe55953584134cb6853a13c87ec0a1
 - name: github.com/golang/protobuf
   version: 1643683e1b54a9e88ad26d98f81400c8c9d9f4f9
 - name: github.com/mattn/go-isatty
