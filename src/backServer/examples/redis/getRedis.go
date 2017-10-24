@@ -14,10 +14,16 @@ func main() {
 	}
 	defer c.Close()
 
-	// _, err = c.Do("SET", "mykey", "superWang")
-	// if err != nil {
-	// 	fmt.Println("redis set failed:", err)
-	// }
+	_, err = c.Do("SET", "mykey", "superWang")
+	if err != nil {
+		fmt.Println("redis set failed:", err)
+	}
+
+	_, err = c.Do("SET", "DIO", "JJDI")
+
+	if err != nil {
+		fmt.Println("redis set failed:", err)
+	}
 
 	username, err := redis.String(c.Do("GET", "mykey"))
 	if err != nil {
