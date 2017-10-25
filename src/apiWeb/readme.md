@@ -6,6 +6,9 @@ glide get github.com/golang/protobuf
 glide get gopkg.in/yaml.v2
 glide get gopkg.in/go-playground/validator.v8
 glide get github.com/go-playground/universal-translator
+glide get gopkg.in/go-playground/validator.v9
+
+
 ----
 plugns
 支持工具
