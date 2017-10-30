@@ -1,0 +1,16 @@
+hash: c25e708be71bf61fb1af5480c486a486974ff386887233b55e3b06646cb534ed
+updated: 2017-10-30T14:05:56.3406598+08:00
+imports:
+- name: github.com/elgs/gojq
+  version: 81fa9a608a130323eaf4b4fc00224f7a467ffbd1
+- name: github.com/elgs/gosplitargs
+  version: a491c5eeb3c841d55913cf4888f5c957be4c598d
+- name: github.com/elgs/jsonql
+  version: 7146bdb05a1e395106204d45100e4d19eed3b62c
+- name: github.com/kataras/iris
+  version: 677f1e567754659f2d02afae0f40aa614a5f202e
+- name: github.com/tidwall/gjson
+  version: 5a69e67cfd8f6f9b0044ed49f5079d0eeed28653
+- name: github.com/tidwall/match
+  version: 1731857f09b1f38450e2c12409748407822dc6be
+testImports: []

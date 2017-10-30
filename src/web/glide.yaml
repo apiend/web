@@ -1,0 +1,7 @@
+package: web
+import:
+- package: github.com/tidwall/gjson
+  version: ^1.0.1
+- package: github.com/elgs/jsonql
+- package: github.com/kataras/iris
+  version: ^8.5.4
