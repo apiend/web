@@ -48,6 +48,7 @@ func main() {
 		return
 	}
 	fmt.Println(parser.Query("name='elgs'"))
+
 	//[map[skills:[Golang Java C] name:elgs gender:m age:35]] <nil>
 
 	fmt.Println(parser.Query("name='elgs' && gender='f'"))
