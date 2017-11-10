@@ -2,7 +2,6 @@ package simplejson
 
 import (
 	"encoding/json"
-	"fmt"
 	"testing"
 
 	"github.com/bmizerany/assert"
@@ -157,8 +156,6 @@ func TestSet(t *testing.T) {
 	js.Set("baz", "bing")
 
 	s, err := js.GetPath("baz").String()
-	fmt.Println(s)
-
 	assert.Equal(t, nil, err)
 	assert.Equal(t, "bing", s)
 }

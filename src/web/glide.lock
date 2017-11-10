@@ -1,5 +1,5 @@
-hash: ee3424c80e9f1866ab804e345443ba7fe96a0069bdaf201d6ef8ab1e84761a21
-updated: 2017-11-02T17:53:04.8341089+08:00
+hash: 186cd6fc9d679996090c928b50042b10982c27f956e11e30cd71d31a8d39cc7d
+updated: 2017-11-10T11:47:32.6048061+08:00
 imports:
 - name: github.com/bitly/go-simplejson
   version: aabad6e819789e569bd6aabf444c935aa9ba1e44
@@ -19,4 +19,6 @@ imports:
   version: 5a69e67cfd8f6f9b0044ed49f5079d0eeed28653
 - name: github.com/tidwall/match
   version: 1731857f09b1f38450e2c12409748407822dc6be
+- name: github.com/uudashr/gopkgs
+  version: 117893d0b8ebac48f144b025d3dcf42508eacb06
 testImports: []

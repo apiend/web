@@ -35,3 +35,6 @@ This is web system
 
 -----
  vs code plugin
+ Update(需要重新更新的 vs 插件)
+ glide get -u -v github.com/uudashr/gopkgs
+ glide get -u -v github.com/ramya-rao-a/go-outline
