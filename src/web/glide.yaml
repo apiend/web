@@ -1,0 +1,11 @@
+package: web
+import:
+- package: github.com/tidwall/gjson
+  version: ^1.0.1
+- package: github.com/elgs/jsonql
+- package: github.com/bitly/go-simplejson
+  version: ^0.5.0
+- package: github.com/bmizerany/assert
+- package: github.com/kr/pretty
+- package: github.com/kr/text
+- package: github.com/uudashr/gopkgs
