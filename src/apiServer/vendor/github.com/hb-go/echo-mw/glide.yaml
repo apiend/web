@@ -1,5 +1,0 @@
-package: github.com/hobo-go/echo-mw
-import:
-- package: github.com/flosch/pongo2
-- package: github.com/gorilla/sessions
-- package: github.com/boj/redistore
