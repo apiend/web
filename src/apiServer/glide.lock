@@ -1,0 +1,10 @@
+hash: 7c678c6cfc4a360043f1eda27aa96810ad5adcdb57a522ed81bf84ee4bd651f6
+updated: 2017-12-04T14:22:31.0729367+08:00
+imports:
+- name: github.com/devfeel/dotweb
+  version: 650e68d4987795868b485731ec5b9ca5ab0e5e02
+- name: github.com/garyburd/redigo
+  version: 47dc60e71eed504e3ef8e77ee3c6fe720f3be57f
+  subpackages:
+  - redis
+testImports: []
