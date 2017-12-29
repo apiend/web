@@ -1,0 +1,3 @@
+package: example
+import:
+- package: github.com/kn9ts/frodo

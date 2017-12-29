@@ -1,0 +1,6 @@
+hash: 4149c6dc48fe21b2dceffd2eb49a69a120f58116ff7eba0ec5433f2295416b00
+updated: 2017-12-29T11:53:45.0881876+08:00
+imports:
+- name: github.com/kn9ts/frodo
+  version: 5f7c74c759d76ef223e455080015438eca7c4363
+testImports: []
