@@ -1,6 +1,8 @@
-hash: 4149c6dc48fe21b2dceffd2eb49a69a120f58116ff7eba0ec5433f2295416b00
-updated: 2017-12-29T11:53:45.0881876+08:00
+hash: af57962094595aef0f3bb14eb1004a7566cbc0df970fc40c6c6af78fd9a2d2af
+updated: 2018-01-02T16:32:43.7966062+08:00
 imports:
 - name: github.com/kn9ts/frodo
   version: 5f7c74c759d76ef223e455080015438eca7c4363
+- name: github.com/vmihailenco/msgpack
+  version: 40b1cac89761d843bbb96b8b27c746ba5937322a
 testImports: []
