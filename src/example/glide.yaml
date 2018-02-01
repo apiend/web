@@ -3,3 +3,5 @@ import:
 - package: github.com/kn9ts/frodo
 - package: github.com/vmihailenco/msgpack
   version: ^3.2.3
+- package: golang.org/x/net
+- package: github.com/edwingeng/wuid

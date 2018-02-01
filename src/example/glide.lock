@@ -1,8 +1,18 @@
-hash: af57962094595aef0f3bb14eb1004a7566cbc0df970fc40c6c6af78fd9a2d2af
-updated: 2018-01-02T16:32:43.7966062+08:00
+hash: 320d90616bd72d2a56461390164f1428b78f884931884805363ae3ae07877934
+updated: 2018-02-01T16:00:13.7841867+08:00
 imports:
+- name: github.com/edwingeng/wuid
+  version: b84d65b1834d5771e4ad344ffedc010d924c8eed
 - name: github.com/kn9ts/frodo
   version: 5f7c74c759d76ef223e455080015438eca7c4363
 - name: github.com/vmihailenco/msgpack
-  version: 40b1cac89761d843bbb96b8b27c746ba5937322a
+  version: a2885efdac59c3f72964b70a6b1d9f6053acea2a
+  subpackages:
+  - codes
+- name: golang.org/x/net
+  version: 309822c5b9b9f80db67f016069a12628d94fad34
+  subpackages:
+  - context
+- name: google.golang.org/appengine/datastore
+  version: 9093111e84c0a1120b657892e3766631ee79dd92
 testImports: []
