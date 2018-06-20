@@ -1,8 +1,0 @@
-package: apiServer
-import:
-- package: github.com/devfeel/dotweb
-  version: ^1.3.9
-- package: github.com/garyburd/redigo
-  version: ^1.3.0
-  subpackages:
-  - redis
