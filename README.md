@@ -34,9 +34,18 @@ vs code plugin Update( 需要重新更新的 vs 插件 )
 * glide get -u -v github.com/ramya-rao-a/go-outline
 
 
+
+* glide get -u github.com/766b/go-outliner
+
 ##  一些常用插件无法使用的问题
 mkdir -p $GOPATH/src/golang.org/x/
 cd !$
 git clone https://github.com/golang/net.git
 git clone https://github.com/golang/sys.git
 git clone https://github.com/golang/tools.git
+git clone https://github.com/golang/crypto.git
+
+-----
+
+
+glide get  -u -v github.com/uudashr/gopkgs/cmd/gopkgs

@@ -1,0 +1,38 @@
+hash: ae7484d32f6a6884fe5f1ff8c6b9bca4134da8701611347bd5c8ebc642525bb8
+updated: 2018-08-06T17:56:10.2091105+08:00
+imports:
+- name: 9fans.net/go
+  version: d40625903c90860e82649376c42132c26a2a6f12
+  subpackages:
+  - acme
+- name: github.com/acroca/go-symbols
+  version: 953befd75e223f514580fcb698aead0dd6ad3421
+- name: github.com/cweill/gotests
+  version: a3c1a1257668d18c210c0a63299466e301f67c27
+- name: github.com/fatih/gomodifytags
+  version: db1e1dec6c55b07070423de0d612b5473fe24b22
+- name: github.com/golang/lint
+  version: 470b6b0bb3005eda157f0275e2e4895055396a81
+  subpackages:
+  - golint
+- name: github.com/josharian/impl
+  version: 3d0f908298c49598b6aa84f101c69670e15d1d03
+- name: github.com/mdempsky/gocode
+  version: 00e7f5ac290aeb20a3d8d31e737ae560a191a1d5
+- name: github.com/ramya-rao-a/go-outline
+  version: 9e9d089bb61a5ce4f8e0c8d8dc5b4e41b0e02a48
+- name: github.com/rogpeppe/godef
+  version: b692db1de5229d4248e23c41736b431eb665615d
+- name: github.com/sqs/goreturns
+  version: 83e02874ec120f73d5f7dd382d62449dc8abe9c6
+- name: github.com/uudashr/gopkgs
+  version: f63dba0264b417f849a71d9e8d62d645e25592a6
+  subpackages:
+  - cmd/gopkgs
+- name: github.com/zmb3/gogetdoc
+  version: 10095872a7c53aa605a7e6d9b3db2c636bd78f7a
+- name: golang.org/x/lint
+  version: 470b6b0bb3005eda157f0275e2e4895055396a81
+- name: golang.org/x/tools
+  version: 25b95b48224cce18163c7d49dcfb89a2d5ecd209
+testImports: []

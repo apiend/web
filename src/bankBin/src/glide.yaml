@@ -1,0 +1,24 @@
+package: bankBin
+import:
+- package: github.com/sqs/goreturns
+- package: github.com/ramya-rao-a/go-outline
+- package: github.com/acroca/go-symbols
+- package: github.com/mdempsky/gocode
+- package: github.com/rogpeppe/godef
+- package: golang.org/x/tools
+- package: github.com/zmb3/gogetdoc
+- package: github.com/golang/lint
+  subpackages:
+  - golint
+- package: github.com/fatih/gomodifytags
+- package: github.com/cweill/gotests
+  version: ^1.5.2
+- package: github.com/josharian/impl
+- package: github.com/uudashr/gopkgs
+  version: ^1.3.2
+  subpackages:
+  - cmd/gopkgs
+- package: 9fans.net/go
+  subpackages:
+  - acme
+- package: golang.org/x/lint

@@ -1,0 +1,11 @@
+package: apiServer
+import:
+- package: github.com/labstack/echo
+  version: ^3.3.5
+  subpackages:
+  - '...'
+- package: golang.org/x/sys
+- package: golang.org/x/net
+- package: golang.org/x/crypto
+- package: github.com/labstack/gommon
+  version: ^0.2.6
