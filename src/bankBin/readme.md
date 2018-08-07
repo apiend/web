@@ -27,3 +27,11 @@ glide get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
 go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct
 go get -u -v github.com/alecthomas/gometalinter
 gometalinter --install
+
+------
+
+在一个终端中运行以下命令来安装 `errcheck`，这是许多可用的 linters（代码检测工具） 之一。
+
+`glide get -u github.com/kisielk/errcheck`
+
+然后，在你的代码目录中运行 `errcheck .`。

@@ -1,5 +1,5 @@
-hash: ae7484d32f6a6884fe5f1ff8c6b9bca4134da8701611347bd5c8ebc642525bb8
-updated: 2018-08-06T17:56:10.2091105+08:00
+hash: 49cb53762cef515c69de14dba2120955a56cf45318e254606bd700a6c9e4cf0d
+updated: 2018-08-07T10:50:55.9904788+08:00
 imports:
 - name: 9fans.net/go
   version: d40625903c90860e82649376c42132c26a2a6f12
@@ -17,6 +17,10 @@ imports:
   - golint
 - name: github.com/josharian/impl
   version: 3d0f908298c49598b6aa84f101c69670e15d1d03
+- name: github.com/kisielk/errcheck
+  version: 55d8f507faff4d6eddd0c41a3e713e2567fca4e5
+- name: github.com/kisielk/gotool
+  version: 80517062f582ea3340cd4baf70e86d539ae7d84d
 - name: github.com/mdempsky/gocode
   version: 00e7f5ac290aeb20a3d8d31e737ae560a191a1d5
 - name: github.com/ramya-rao-a/go-outline
