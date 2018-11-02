@@ -8,7 +8,7 @@ This is web system
 
 ## Http2 生成本地 TLS 证书
 
-go run c:\Go\src\crypto\tls\generate_cert.go --host localhost
+go run c:\\Go\\src\\crypto\\tls\\generate_cert.go --host localhost
 
 ### golang.org 设置 mirror
 

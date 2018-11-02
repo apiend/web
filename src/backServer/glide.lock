@@ -1,8 +1,0 @@
-hash: af9ebfce4fc23bbce12e3f3b235e58bc5df4bd03425922561385252f77e535c4
-updated: 2018-09-08T16:14:59.1393797+08:00
-imports:
-- name: github.com/derekparker/delve
-  version: 9992fa83c16fc8612b33ad93ad29fbb524d1630c
-  subpackages:
-  - cmd/dlv
-testImports: []

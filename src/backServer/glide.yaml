@@ -1,6 +1,2 @@
 package: backServer
-import:
-- package: github.com/derekparker/delve
-  version: ^1.1.0
-  subpackages:
-  - cmd/dlv
+import: []
