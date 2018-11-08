@@ -20,8 +20,18 @@ go run c:\\Go\\src\\crypto\\tls\\generate_cert.go --host localhost
 * $ glide mirror set https://golang.org/x/image https://github.com/golang/image --vcs git
 * $ glide mirror set https://golang.org/x/sys https://github.com/golang/sys --vcs git
 * $ glide mirror set https://golang.org/x/sys/unix  https://github.com/golang/sys/unix --vcs git
-* $ glide mirror set https://golang.org/x/crypto https://github.com/golang/crypto --vcs git
 
+glide mirror set https://golang.org/x/crypto https://github.com/golang/crypto --vcs git
+
+glide mirror set https://golang.org/x/net https://github.com/golang/net --vcs git
+
+glide mirror set https://golang.org/x/sys https://github.com/golang/sys --vcs git
+
+glide mirror set https://golang.org/x/text https://github.com/golang/text --vcs git
+
+glide mirror set https://google.golang.org/grpc https://github.com/grpc/grpc-go --vcs git
+
+glide mirror set https://google.golang.org/genproto https://github.com/google/go-genproto --vcs git
 
 
 glide mirror set https://golang.org/x/net/websocket https://github.com/golang/net/tree/master/websocket  --vcs git

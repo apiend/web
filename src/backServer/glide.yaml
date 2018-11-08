@@ -1,2 +1,9 @@
 package: backServer
-import: []
+import:
+- package: github.com/gin-gonic/gin
+  version: v1.3.0
+- package: golang.org/x/sys
+- package: github.com/duncanhall/gounzip
+  version: 0.1.0
+- package: github.com/uudashr/gopkgs
+  version: v2.0.1

@@ -17,4 +17,5 @@ pkg/
 .idea/*
 .vscode/*
 .vscode/settings.json
+vendor/
  
