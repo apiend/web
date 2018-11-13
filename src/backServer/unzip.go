@@ -1,17 +1,37 @@
 package main
 
-import(
+import (
+	// gounzip "github.com/duncanhall/gounzip"
+
+	"compress/flate"
 	"fmt"
-	gounzip "github.com/duncanhall/gounzip"
+
+	"github.com/mholt/archiver"
 )
 
+func main() {
 
-func main(){
-
-	fmt.Printf("ss")
-	err := gounzip.Unzip("demo.zip")
-	if err != nil {
-		return err
+	z := archiver.Zip{
+		CompressionLevel:       flate.DefaultCompression,
+		MkdirAll:               true,
+		SelectiveCompression:   true,
+		ContinueOnError:        false,
+		OverwriteExisting:      false,
+		ImplicitTopLevelFolder: false,
 	}
-	
+
+	// err := z.Walk("file/demo.zip", func(f archiver.File) error {
+	// 	zfh, ok := f.Header.(zip.FileHeader)
+	// 	if ok {
+	// 		fmt.Println("Filename:", zfh.Name)
+	// 		err2 := z.Extract("file/demo.zip", zfh.Name, "file/demo/")
+	// 		fmt.Println(err2)
+	// 	}
+	// 	return nil
+	// })
+
+	err := z.Unarchive("file/demo.zip", "file/demo/")
+
+	fmt.Println(err)
+
 }

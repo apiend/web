@@ -7,3 +7,5 @@ import:
   version: 0.1.0
 - package: github.com/uudashr/gopkgs
   version: v2.0.1
+- package: github.com/mholt/archiver
+  version: v3.0.0
