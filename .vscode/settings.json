@@ -30,7 +30,7 @@
   // Specifies the GOPATH to use when no environment variable is set. The inferred GOPATH from workspace root overrides this, if go.inferGopath is set to true.
   "go.gopath": "e:/github.com/web",
   // Location to install the Go tools that the extension depends on if you don't want them in your GOPATH.
-  "go.toolsGopath": "e:/github.com/Golang-lesson",
+  "go.toolsGopath": "C:/Users/Diogoxiang/go",
   // Specifies the GOROOT to use when no environment variable is set.
   "go.goroot": "C:/Go",
   // Run 'go test' on save for current package. It is not advised to set this to `true` when you have Auto Save enabled.
@@ -46,13 +46,14 @@
   // Enable gocode's autobuild feature
   "go.gocodeAutoBuild": true,
   // Complete functions with their parameter signature
-  "go.useCodeSnippetsOnFunctionSuggest": false,
+  "go.useCodeSnippetsOnFunctionSuggest": true,
   // Include unimported packages in auto-complete suggestions.
-  "go.autocompleteUnimportedPackages": false,
+  "go.autocompleteUnimportedPackages": true,
   // Pick 'godoc' or 'gogetdoc' to get documentation. In Go 1.5, godoc is used regardless of the choice here.
   "go.docsTool": "godoc",
   // Experimental: Not available in Windows. Use Go language server from Sourcegraph for Hover, Definition, Find All References, Signature Help, File Outline and Workspace Symbol features
   "go.useLanguageServer": false,
   // If false, the import statements will be excluded while using the Go to Symbol in File feature
-  "go.gotoSymbol.includeImports": false
+  "go.gotoSymbol.includeImports": true,
+   "go.useCodeSnippetsOnFunctionSuggestWithoutType": true
 }

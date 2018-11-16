@@ -17,7 +17,7 @@ func setupRouter() *gin.Engine {
 	r.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
-	
+
 	// Get user value
 	r.GET("/user/:name", func(c *gin.Context) {
 		user := c.Params.ByName("name")
@@ -62,4 +62,5 @@ func main() {
 	r := setupRouter()
 	// Listen and Server in 0.0.0.0:8080
 	r.Run(":8080")
+
 }
